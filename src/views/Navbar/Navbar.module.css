@@ -1,0 +1,8 @@
+.navbar {
+  color: #5987af;
+}
+
+.navbar:hover {
+  cursor: pointer;
+  color: #6ba1d1;
+}

@@ -1,0 +1,11 @@
+:root {
+  --color-barra: #5987af;
+  --color-azulCielo: #6ba1d1;
+  --color-oscuro: #213547;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
