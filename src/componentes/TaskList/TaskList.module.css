@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttonG {
+  height: 23px;
+  border: none;
+  margin: 0.5em;
+  border-radius: 2px;
+  font-size: 14px;
+  background: var(--color-verde);
+  &:hover {
+    background: var(--color-verde1);
+    cursor: pointer;
+  }
+}
+
+.buttonC {
+  height: 23px;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+  background: var(--color-rojo);
+  &:hover {
+    background: var(--color-rojo1);
+    cursor: pointer;
+  }
+}
+
+.inputEdit {
+  width: 150px;
+  height: 21px;
+  border: none;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  outline: none;
+  font-size: 15px;
+  color: var(--color-navbar);
+  box-shadow: 0 2px 41px rgba(57, 55, 60, 0.29);
+}
+
+.subrayado {
+  text-decoration: line-through;
+}
+
+.checkbox {
+  margin: 1em;
+  cursor: pointer;
+}
+
+.span {
+  margin: 1em;
+}
+
+.task {
+  margin: 0px;
+}

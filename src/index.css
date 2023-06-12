@@ -12,6 +12,24 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --color-navbar: #cacaca;
+  --color-letras: #8f3ce8;
+  --color-title: #f971ff;
+  --color-titlem: #550bd2;
+  --color-titlem1: #8049d7;
+  --color-titlem2: #5c67fe;
+  --color-titlem3: #8a8fff;
+  --color-verde: #047e00;
+  --color-verde1: #035201;
+  --color-rojo: #ff0000;
+  --color-rojo1: #850000;
+}
+
+#root {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: 0;
 }
 
 @media (prefers-color-scheme: light) {

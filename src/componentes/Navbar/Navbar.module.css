@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container h2 {
+  font-size: 20px;
+  color: var(--color-titlem2);
+  border-bottom: 2px solid;
+  transition: 0.5s;
+}
+
+.container h2:hover {
+  cursor: pointer;
+  color: var(--color-titlem3);
+  transform: scale(1.01);
+}

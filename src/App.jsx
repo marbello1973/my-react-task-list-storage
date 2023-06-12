@@ -1,12 +1,14 @@
-import styles from "./App.module.css";
-import Navbar from "./views/Navbar/Navbar";
+import "./App.css";
+import Navbar from "./componentes/Navbar/Navbar";
+import Home from "./views/Home/Home";
 
 function App() {
   return (
-    <div className={styles.container}>
+    <div>
       <div>
         <Navbar />
       </div>
+      <Home />
     </div>
   );
 }

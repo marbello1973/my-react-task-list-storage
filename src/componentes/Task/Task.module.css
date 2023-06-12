@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+.container input {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  outline: none;
+  font-size: 17px;
+  color: var(--color-navbar);
+  box-shadow: 0 2px 41px rgba(57, 55, 60, 0.29);
+}
+
+.container button {
+  height: 32px;
+  border: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-size: 17px;
+}
+
+.container button:hover {
+  cursor: pointer;
+  background: var(--color-titlem2);
+}
