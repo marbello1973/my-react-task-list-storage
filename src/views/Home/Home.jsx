@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import Task from "../../componentes/Task/Task";
-import styles from "./Home.module.css";
 import TaskList from "../../componentes/TaskList/TaskList";
 
-//subida a la branch project-3 a la rama 3
+//subida a la branch project-3
 function Home() {
   const [newTask, setNewTask] = useState([]);
 
@@ -74,7 +73,7 @@ function Home() {
   }, [newTask]);
 
   return (
-    <div className={styles.containerHome}>
+    <div>
       <Task addTask={addTask} />
       <TaskList
         task={newTask}
