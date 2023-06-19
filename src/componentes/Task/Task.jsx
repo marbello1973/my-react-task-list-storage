@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import { Stack, Center, Input, Flex, Box, Spacer } from "@chakra-ui/react";
+import styles from "./Task.module.css";
+
+import { Stack, Center, Flex, Box } from "@chakra-ui/react";
 
 function Task({ addTask }) {
   const [tasks, setTasks] = useState("");
@@ -10,27 +12,20 @@ function Task({ addTask }) {
     setTasks("");
   };
   return (
-    <div>
+    <div className={styles.container}>
       <form onSubmit={handlerSubmit}>
-        <Flex fontSize="20" cursor="pointer">
+        <Flex fontSize="16" cursor="pointer" mt="5em">
           <Center>
             <Stack>
-              <Box p="4" ml="10em">
-                <Input
-                  w="30em"
-                  mt="5em"
-                  border={2}
-                  variant="outline"
+              <Box p="4">
+                <input
+                  className={styles.input}
                   placeholder="add task"
-                  size="sm"
                   value={tasks}
                   onChange={(e) => setTasks(e.target.value)}
                   type="text"
-                />
-              </Box>
-              <Spacer />
-              <Box p="4" mr="10em">
-                <button>Add</button>
+                />{" "}
+                <button className={styles.button}>add</button>
               </Box>
             </Stack>
           </Center>

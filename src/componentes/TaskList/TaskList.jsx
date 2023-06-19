@@ -1,5 +1,12 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
+import { RiDeleteBin6Line, RiPencilLine } from "react-icons/ri";
+import { MdCancelPresentation, MdSaveAlt } from "react-icons/md";
+import styles from "./TaskList.module.css";
+
+//BsSave
+//IoSaveOutline
+//MdCancelPresentation
 
 function TaskList({ task, toggleTask, dellTask, editTask }) {
   const [editedTask, setEditedTask] = useState({ id: null, name: "" });
@@ -22,24 +29,29 @@ function TaskList({ task, toggleTask, dellTask, editTask }) {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       {task.map((el) => (
         <div key={el.id}>
           <ul>
             <li>
               {editedTask.id === el.id ? (
-                <>
+                <div className={styles.containerInputUno}>
                   <input
                     placeholder="Basic usage"
                     type="text"
                     value={editedTask.name}
                     onChange={handleTaskNameChange}
                   />
-                  <button onClick={handleSaveEdit}>Guardar</button>
-                  <button onClick={handleCancelEdit}>Cancelar</button>
-                </>
+
+                  <button onClick={handleSaveEdit}>
+                    <MdSaveAlt className={styles.butonSave} />
+                  </button>
+                  <button onClick={handleCancelEdit}>
+                    <MdCancelPresentation className={styles.butonCancel} />
+                  </button>
+                </div>
               ) : (
-                <>
+                <div className={styles.containerInputDos}>
                   <input
                     type="checkbox"
                     checked={el.done}
@@ -47,11 +59,16 @@ function TaskList({ task, toggleTask, dellTask, editTask }) {
                   />
                   <span>{el.name}</span>
 
-                  <button onClick={() => dellTask(el.id)}>Dell</button>
-                  <button onClick={() => handleEdit(el.id, el.name)}>
-                    Edit
+                  <button
+                    className={styles.buttonDell}
+                    onClick={() => dellTask(el.id)}
+                  >
+                    <RiDeleteBin6Line />
                   </button>
-                </>
+                  <button onClick={() => handleEdit(el.id, el.name)}>
+                    <RiPencilLine />
+                  </button>
+                </div>
               )}
             </li>
           </ul>
@@ -62,3 +79,4 @@ function TaskList({ task, toggleTask, dellTask, editTask }) {
 }
 
 export default TaskList;
+//RiDeleteBin6Line
