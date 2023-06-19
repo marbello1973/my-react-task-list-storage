@@ -53,6 +53,7 @@ function TaskList({ task, toggleTask, dellTask, editTask }) {
               ) : (
                 <div className={styles.containerInputDos}>
                   <input
+                    className={styles.checkbox}
                     type="checkbox"
                     checked={el.done}
                     onChange={() => toggleTask(el)}

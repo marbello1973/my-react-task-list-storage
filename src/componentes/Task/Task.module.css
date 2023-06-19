@@ -10,7 +10,7 @@
   border-color: rgb(255, 111, 0);
   width: 15em;
   height: 2em;
-  color: #3f3f3f;
+  color: #878787;
   font-size: 16px;
   text-align: center;
 }
@@ -27,6 +27,7 @@
   align-items: center;
   transition: 0.3s;
   border-color: rgb(255, 111, 0);
+  color: #878787;
 }
 
 .button:hover {

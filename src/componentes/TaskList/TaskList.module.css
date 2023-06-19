@@ -80,3 +80,7 @@
   margin: 5px;
   padding: 4px;
 }
+
+.checkbox {
+  cursor: pointer;
+}
