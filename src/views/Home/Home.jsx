@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Task from "../../componentes/Task/Task";
 import TaskList from "../../componentes/TaskList/TaskList";
+import Navbar from "../../componentes/Navbar/Navbar";
 
 //subida a la branch project-3
 function Home() {
@@ -74,6 +75,7 @@ function Home() {
 
   return (
     <div>
+      <Navbar />
       <Task addTask={addTask} />
       <TaskList
         task={newTask}
