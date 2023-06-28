@@ -9,7 +9,7 @@ import {
   CardFooter,
   Button,
 } from "@chakra-ui/react";
-
+//configurado con chakra
 function Landing() {
   return (
     <Center mt={10}>
