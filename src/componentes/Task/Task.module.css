@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  border: 1px solid;
+  border-radius: 5px;
+  outline: none;
+  border-color: rgb(255, 111, 0);
+  width: 15em;
+  height: 2em;
+  color: #878787;
+  font-size: 16px;
+  text-align: center;
+}
+
+.input::placeholder {
+  color: #e4e4e4;
+}
+
+.button {
+  width: 50px;
+  height: 2em;
+  border: 1px solid;
+  border-radius: 5px;
+  align-items: center;
+  transition: 0.3s;
+  border-color: rgb(255, 111, 0);
+  color: #878787;
+}
+
+.button:hover {
+  background: #ff4d01;
+  color: #fff;
+  border: 1px solid;
+}
